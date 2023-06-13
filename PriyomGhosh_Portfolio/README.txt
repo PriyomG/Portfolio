@@ -1,0 +1,3 @@
+Priyom Ghosh's Portfolio
+
+OPEN main.html TO VIEW THE PORTFOLIO FROM THE BEGINNING
