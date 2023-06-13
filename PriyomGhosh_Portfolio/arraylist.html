@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <header>
+                <a href="main.html" class="logo">
+                    <img class="logo" src="logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="main.html" class="className">HOME</a></li>
+                        <li><a href="about.html" class="className">ABOUT</a></li>
+                        <li><a href="projects.html" class="className">PROJECTS</a></li>
+                        <li><a href="bib.html" class="className">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Explanations</button>
+                    <div class="dropdown-content">
+                        <a href="OOPInher.html" class="className">OOP/Inheritence</a>
+                        <a href="arrays.html" class="className">Java Arrays</a>
+                        <a href="arraylist.html" class="className">ArrayList</a>
+                        <a href="searchsort.html" class="className">Searching/Sorting</a>
+                        <a href="recursion.html" class="className">Recursion</a>
+                    </div>
+                </div>
+            </header>
+            </div>
+            <script type="text/javascript">
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.querySelector('.navbar').classList.remove('hidden');
+                } else {
+                    document.querySelector('.navbar').classList.add('hidden');
+                }
+                prevScrollpos = currentScrollPos;
+                }
+            </script>
+        <div class="spaceCreate">
+            <h2 class="subtop">ArrayList</h2>
+        </div>
+        <h2 class="subtop2">Introduction</h2>
+        <p>Unlike arrays in Java, ArrayLists have dynamic sizes. This means that they may have an initial set size, but it can be changed depending on the number of elements present in the ArrayList. Also, ArrayLists can only work with non-primitive types such as Integer, String, and other classes which may be created by the user.</p>
+
+        <p>Here’s a demonstration of how to initialize an ArrayList of Integer type. This will create an <strong>EMPTY</strong> ArrayList with a default capacity of 10. We do not need to set a size for the ArrayList since it is dynamic and will change depending on the number of elements added or removed from it. However, a specified initial capacity may be entered inside of the round brackets ().</p>
+        <!--
+        <div class="codeSection">
+            <div class="codeSection2">
+                <code>
+                    ArrayList&lt;Integer&gt; arr = new ArrayList&lt;Interger&gt;();
+                </code>
+            </div>
+        </div>
+        -->
+        <img class="images" src="ArrayList/arrList1.png" alt="arrList1">
+        <h2 class="subtop2">Autoboxing/Autowrapping</h2>
+        <p>Processes called autoboxing/autowrapping are useful in ArrayLists as ArrayLists do not use primitive data types. In short, autoboxing converts primitive data types, such as int and double, into their wrapper class form, Integer and Double. Autounboxing is the reverse, converting from wrapper class form to primitive data type. Wrapper classes are Java classes that are intended to hold a single instance of the associated primitive type's data value. When you want to store primitive data types in Java structures that demand objects, like ArrayLists, you utilize them.</p>
+        
+        <h2 class="subtop2">Commonly Used Methods for ArrayList</h2>
+        <ul class='listFormat'>
+            <li class="listColour">- <strong>add(int index, E element)</strong> | Add a value to the specified index and push the original value and all that follow to the left</li>
+            <li class="listColour">- <strong>set(int index, E element)</strong> | Set an index's value to a specified value</li>
+            <li class="listColour">- <strong>get(int index)</strong> | Get the value of the index specified</li>
+            <li class="listColour">- <strong>remove(int index)</strong> | Remove the element at the index specified</li>
+            <li class="listColour">- <strong>clear()</strong> | Remove all elements in the ArrayList</li>
+            <li class="listColour">- <strong>size()</strong> | Return the size/length of the ArrayList</li>
+            <li class="listColour">- <strong>isEmpty()</strong> | Check if the ArrayList is empty</li>
+            <li class="listColour">- <strong>contains(E element)</strong> | Check if the ArrayList contains a certain value</li>
+            <li class="listColour">- <strong>indexOf(E element)</strong> | Find the index of a certain value within the ArrayList</li>
+        </ul>
+
+        <h2 class="subtop2">Access Elements</h2>
+        <p>Accessing elements in an ArrayList is the exact same as normal arrays in Java. Keep in mind that ArrayList sizes are dynamic, so if you add/remove an element from the ArrayList, the size of the ArrayList will change.</p>
+        <img class="images" src="ArrayList/arrList2.png" alt="arrList2">
+        <img class="images" src="ArrayList/arrList2Out.png" alt="arrList2Output">
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <header>
+                <a href="main.html" class="logo">
+                    <img class="logo" src="logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="main.html" class="className">HOME</a></li>
+                        <li><a href="about.html" class="className">ABOUT</a></li>
+                        <li><a href="projects.html" class="className">PROJECTS</a></li>
+                        <li><a href="bib.html" class="className">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Explanations</button>
+                    <div class="dropdown-content">
+                        <a href="OOPInher.html" class="className">OOP/Inheritence</a>
+                        <a href="arrays.html" class="className">Java Arrays</a>
+                        <a href="arraylist.html" class="className">ArrayList</a>
+                        <a href="searchsort.html" class="className">Searching/Sorting</a>
+                        <a href="recursion.html" class="className">Recursion</a>
+                    </div>
+                </div>
+            </header>
+            </div>
+            <script type="text/javascript">
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.querySelector('.navbar').classList.remove('hidden');
+                } else {
+                    document.querySelector('.navbar').classList.add('hidden');
+                }
+                prevScrollpos = currentScrollPos;
+                }
+            </script>
+        <div class="spaceCreate">
+            <h2 class="subtop">Searching</h2>
+        </div>
+        <p>When you are trying to find an element in an array or list of elements, you will use a search method. There are multiple types of searching methods that can be used.</p>
+        <h2 class="subtop2">Linear/Sequential Search</h2>
+        <p>In Linear/Sequential search, the order of the elements does not matter. The user must provide the given information necessary to find the target element such as the array to look through and the target value. In this searching method, the program will find the first element that matches the target value and return the index of that element in the array/list. The time complexity of linear search is O(n) where n is the number of elements inside the list.</p>
+        <img class="images" src="SearchAndSort/seqSearch.png" alt="seqSearch">
+        <h2 class="subtop2">Binary Search</h2>
+        <p>In Binary search, the order of the elements must be in chronological order (this example explains increasing order). The search starts off at the two endpoints of the list and checks the middle element to see if it matches the target after every run, then returns the index if it is equal. However, if the middle element is greater than the target value, then the rightmost endpoint will be changed to the middle element index - 1, and then the search will run again. The opposite occurs if the middle element is less than the target value, the leftmost endpoint will be changed to the middle element index + 1, and then the search will run again. The time complexity of binary search is O(log n) where n is the number of elements inside the list.</p>
+        <img class="images" src="SearchAndSort/binarySearch.png" alt="binarySearch">
+
+        <h2 class="subtop">Sorting</h2>
+        <p>Sorting algorithms are a set of instructions that arranges the items in an array or list in a specific order. Ways in which sorting algorithms may sort include from ascending or descending numerical value, alphabetical order, reverse alphabetical order, and more!</p>
+        <h2 class="subtop2">Insertion Sort</h2>
+        <p>Insertion sort assumes the first element in the list is already sorted, so it starts with the second element and compares it to the elements before it. Then, it will keep continuing to go to the next element in the list until the final element in the list is checked and sorted accordingly. Insertion sort takes the current element to be sorted and then compares it to the element right before it in the list, and then keeps going towards the first index of the list until it finds an element that is smaller in value than it, and then it will place the current value at the position so it is sorted. The average time complexity is O(n2), with the best case being (n-1) comparisons, and the worst case being n(n-1)/2 when the original list is sorted in reverse order.</p>
+        <img class="images" src="SearchAndSort/insertionSort.png" alt="insertionSort">
+        <h2 class="subtop2">Selection Sort</h2>
+        <p>Selection sort searches through the number of elements in the list, n, and then takes the max value and places it at the last index. Then, it will look through n - 1 elements in the list, and find the next max value and place it at the last index of the current number of elements being looked through. The value, n, will keep decrementing while it is greater than 1. The time complexity of selection sort is O(n2), and there is no best or worst case, the number of comparisons is always n(n-1)/2.</p>
+        <img class="images" src="SearchAndSort/selectionSort.png" alt="selectionSort">
+        <h2 class="subtop2">Radix Sort</h2>
+        <p>Radix Sort is a numerical sorting algorithm. It sorts an array by looking at each individual digit of a number (starting from least significant digit (LSD). In the number 675, the LSD would be 5, in the one's place, first sort the element by their LSD in the order they appear in originally. For example, If 874, 8, 63, 94 are in an array, the order of sorting by first digit would be 63, 874, 94, 8. Then, you move to the next LSD. Our array would then turn into 8, 63, 874, 94. This process continues until the array is fully sorted. In our case, the array is fully sorted once we complete looking at the hundred’s place: 8, 63, 94, 874. The time complexity of Radix Sort is O(DN) where N is the size of the array and D is the number of digits in the number with the most amount of digits. Since you have to loop through every digit in every element of an array.</p>
+        <img class="images" src="SearchAndSort/radixSort1.png" alt="radixSort1">
+        <img class="images" src="SearchAndSort/radixSort2.png" alt="radixSort2">
+    </body>
+</html>

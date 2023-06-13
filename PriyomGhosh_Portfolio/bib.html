@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <header>
+                <a href="main.html" class="logo">
+                    <img class="logo" src="logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="main.html" class="className">HOME</a></li>
+                        <li><a href="about.html" class="className">ABOUT</a></li>
+                        <li><a href="projects.html" class="className">PROJECTS</a></li>
+                        <li><a href="bib.html" class="className">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Explanations</button>
+                    <div class="dropdown-content">
+                        <a href="OOPInher.html" class="className">OOP/Inheritence</a>
+                        <a href="arrays.html" class="className">Java Arrays</a>
+                        <a href="arraylist.html" class="className">ArrayList</a>
+                        <a href="searchsort.html" class="className">Searching/Sorting</a>
+                        <a href="recursion.html" class="className">Recursion</a>
+                    </div>
+                </div>
+            </header>
+            </div>
+            <script type="text/javascript">
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.querySelector('.navbar').classList.remove('hidden');
+                } else {
+                    document.querySelector('.navbar').classList.add('hidden');
+                }
+                prevScrollpos = currentScrollPos;
+                }
+            </script>
+        <div class="spaceCreate">
+            <h2 class="subtop">References</h2>
+        </div>
+        <p class="subtop2">Gallagher, P. (2023, April 20). Radix Sort. GeeksforGeeks. Retrieved April 23, 2023, from https://www.geeksforgeeks.org/radix-sort/</p>
+        <p class="subtop2">Krasteva, V. (2023). Inheritance, interfaces, polymorphism. Retrieved April 26, 2023, from https://classroom.google.com/u/1/w/NTEzMTQxNDU4ODM4/tc/NTE4NzcxODk5NDU3</p>
+        <p class="subtop2">Krasteva, V. (2023). Java Arrays. Retrieved April 14, 2023, from https://classroom.google.com/u/1/w/NTEzMTQxNDU4ODM4/tc/NTE2NDgwMjM0MzIy</p>
+        <p class="subtop2">Krasteva, V. (2023). java.util.ArrayList. Retrieved April 15, 2023, from https://classroom.google.com/u/1/w/NTEzMTQxNDU4ODM4/tc/NTE2ODYyMjI0ODI3</p>
+        <p class="subtop2">Krasteva, V. (2023). Objects and classes. Retrieved April 7, 2023, from https://classroom.google.com/u/1/w/NTEzMTQxNDU4ODM4/tc/NTEzNDM2MTc1NjI0</p>
+        <p class="subtop2">Krasteva, V. (2023). Recursion. Retrieved April 23, 2023, from https://classroom.google.com/u/1/w/NTEzMTQxNDU4ODM4/tc/NTE4NTk5NjgzNjI4</p>
+        <p class="subtop2">Krasteva, V. (2023). Searching and Sorting. Retrieved April 25, 2023, from https://classroom.google.com/u/1/w/NTEzMTQxNDU4ODM4/tc/NTE3ODMzOTI3NTU0</p>
+        <p class="subtop2">Merge Sort Algorithm. (2023, March 31). GeeksforGeeks. Retrieved April 28, 2023, from https://www.geeksforgeeks.org/merge-sort/</p>
+        <p class="subtop2">Sorting Algorithms Learning Tool. (n.d.). Sorting Algorithms Learning Tool. Retrieved April 23, 2023, from http://syllabus.cs.manchester.ac.uk/ugt/2019/COMP26120/SortingTool/radix_sort_info.html</p>
+        <p class="subtop2">Wagner, B. (2023, January 31). Polymorphism. Microsoft Learn. Retrieved April 28, 2023, from https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism</p>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <header>
+                <a href="main.html" class="logo">
+                    <img class="logo" src="logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="main.html" class="className">HOME</a></li>
+                        <li><a href="about.html" class="className">ABOUT</a></li>
+                        <li><a href="projects.html" class="className">PROJECTS</a></li>
+                        <li><a href="bib.html" class="className">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Explanations</button>
+                    <div class="dropdown-content">
+                        <a href="OOPInher.html" class="className">OOP/Inheritence</a>
+                        <a href="arrays.html" class="className">Java Arrays</a>
+                        <a href="arraylist.html" class="className">ArrayList</a>
+                        <a href="searchsort.html" class="className">Searching/Sorting</a>
+                        <a href="recursion.html" class="className">Recursion</a>
+                    </div>
+                </div>
+            </header>
+            </div>
+            <script type="text/javascript">
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.querySelector('.navbar').classList.remove('hidden');
+                } else {
+                    document.querySelector('.navbar').classList.add('hidden');
+                }
+                prevScrollpos = currentScrollPos;
+                }
+            </script>
+        <div class="spaceCreate">
+            <h2 class="subtop">Recursion</h2>
+        </div>
+        <h2 class="subtop2">Introduction</h2>
+        <p>Recursion is when a method invokes itself, useful in solving complex problems. This leads to the method being broken down into smaller and more simplified cases until a certain case is reached. The certain case or cases which terminate the method is/are called the base case(s). Since the base case is “terminating” the method, there are no recursive calls to invoke the method again. Base cases are required or else an infinite recursion, also known as stack overflow, will take place. Recursive cases cause the method to call itself and break the method down in subbranches for a “smaller” task.</p>
+        <p>Here’s an example of a simple recursive method which adds the sum of all numbers coming before a specified numerical value:</p>
+        <img class="images" src="Recursion/simpleRecursive.png" alt="simpleRecursiveCode">
+        <img class="images" src="Recursion/recursionExplained.png" alt="recursionExplained">
+        <h2 class="subtop2">Mergesort</h2>
+        <p>Mergesort uses recursion to sort elements into a certain order. First, it takes the original array and splits it roughly into two halves. Then, it recursively sorts by repeatedly splitting the arrays into halves, and then sorting them using mergesort. As the name suggests, the arrays then merge together and slowly start to become sorted. In merge sort, there are about n·log<sub>2</sub>n comparisons, and the time complexity is O(n log n). The best case for this sort is (n-1) comparisons. Here’s the code snippet for merge sort:</p>
+        <img class="images" src="Recursion/mergeSort.png" alt="mergeSort">
+    </body>
+</html>

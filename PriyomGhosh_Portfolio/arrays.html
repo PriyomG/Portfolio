@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <header>
+                <a href="main.html" class="logo">
+                    <img class="logo" src="logo.png" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="main.html" class="className">HOME</a></li>
+                        <li><a href="about.html" class="className">ABOUT</a></li>
+                        <li><a href="projects.html" class="className">PROJECTS</a></li>
+                        <li><a href="bib.html" class="className">BIBLIOGRAPHY</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Explanations</button>
+                    <div class="dropdown-content">
+                        <a href="OOPInher.html" class="className">OOP/Inheritence</a>
+                        <a href="arrays.html" class="className">Java Arrays</a>
+                        <a href="arraylist.html" class="className">ArrayList</a>
+                        <a href="searchsort.html" class="className">Searching/Sorting</a>
+                        <a href="recursion.html" class="className">Recursion</a>
+                    </div>
+                </div>
+            </header>
+            </div>
+            <script type="text/javascript">
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.querySelector('.navbar').classList.remove('hidden');
+                } else {
+                    document.querySelector('.navbar').classList.add('hidden');
+                }
+                prevScrollpos = currentScrollPos;
+                }
+            </script>
+        <div class="spaceCreate">
+            <h2 class="subtop">Java Arrays</h2>
+        </div>
+        <h2 class="subtop2">1-D Arrays</h2>
+        <p>In Java, arrays are lists of values of a specified data type (both primitive and non-primitive) with a set size. Values in an array are also known as elements of the array. Elements in an array may be initialized when instantiating the array, or they may be set later on. To access an element in an array, you must refer to the array through its index place. The first element in an array would be at index 0, and the last element would be at the index of the array’s length - 1. In order to access the x-numbered element in an array, you would refer to the index as x-1. If an index not within the confines of the array size is attempted to be accessed, then an ArrayIndexOutOfBoundsException will occur. You may access all of the elements in an array by using for loops, both standard and enhanced.</p>
+        <img class="images" src="Arrays/arr1.png" alt="arr1">
+        <img class="images" src="Arrays/arr1Out.png" alt="arr1Output">
+        <h2 class="subtop2">2-D Arrays</h2>
+        <p>Similar to 1-D arrays in Java, a 2-D array is basically an array of arrays. Elements in 2-D arrays may be thought of as points on a grid with rows and columns. Each row is a 1-D array, and each column is the element in that specified 1-D array. So, the topmost row (first 1-D array) in a 2-D array would be the 0th index of that 2-D array, and the leftmost column (first element) in any of the rows would be the 0th index. The length of a 2-D array is determined by the number of rows/1-D arrays it has, and the number of elements in a row of a rectangular 2-D array is determined by the length of any of the 1-D arrays in the 2-D array. You may access all of the elements in a 2-D array by having nested for loops where the outside for loop is accessing the row number and the inside for loop is accessing the column number. Similar to 1-D arrays, you may use standard and enhanced for loops.</p>
+        <img class="images" src="Arrays/arr2.png" alt="arr2">
+        <img class="images" src="Arrays/arr2Out.png" alt="arr2Output">
+    </body>
+</html>
